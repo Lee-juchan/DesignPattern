@@ -1,7 +1,7 @@
 /*
     Factory pattern
 
-    : 객체 생성을 캡슐화(숨김)
+    : 객체 생성을 분리
 */
 
 class IAnimal { // 추상 class

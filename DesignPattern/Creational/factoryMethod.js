@@ -1,12 +1,13 @@
 /*
     factory method pattern
 
-    : Factory 추상 클래스에서 Factory method 상속
-    + factory에 추가처리를 하고 싶을 때
+    : 추상 Factory를 상속받아 객체 생성 (주로, 객체-공장 일대일 대응) (temple method의 Factory의 )
+    (factory에 추가처리 가능)
+    temple method의 Factory 버전
 */
 
 class IAnimal { // 추상 class
-    speak() {}
+    speak() {} //
 }
 
 class Cat extends IAnimal { // 구현 class
