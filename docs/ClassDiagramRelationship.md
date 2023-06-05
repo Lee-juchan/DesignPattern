@@ -1,6 +1,6 @@
-# UML, Class Diagram  
+# UML, Class Diagram Relationship  
 
-## Relationship
+---
 
 - **Dependency** (references)  
     - 일시적 참조 
@@ -11,7 +11,8 @@ public class EnrollmentService {
     public void enroll(Student s, Course c) {}
 }
 ```  
-</br>
+
+---
 
 - **Association** (has-a)  
     - 항상 참조 
@@ -22,7 +23,9 @@ public class Order {
     private Customer customer;
 }
 ```
-</br>
+
+---
+
 
 - **Aggregation** (has-a + whole-part)  
     - 항상 참조 + 전체 부분과 관계  
@@ -39,7 +42,9 @@ public class Computer {
     private Monitor monitor;
 }
 ```
-</br>
+
+---
+
 
 - **Composition** (has-a + whole-part + ownership)  
     - 항상 참조 + 전체 부분과 관계  
