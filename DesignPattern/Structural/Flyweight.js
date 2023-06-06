@@ -68,3 +68,37 @@ const dog4 = new Dog("nurung", 3, "jinDo");
 
 console.log(dog3.repr());
 console.log(dog4.repr());
+console.log("--------------");
+
+
+// ex2
+class Tree {
+    constructor(color) {
+        this.color = color;
+    }
+
+    install() {
+        console.log(`install ${this.color} tree`);
+    }
+}
+
+class TreeFactory {
+    static treeMap = new Map();
+
+    static getTree(color) {
+        let tree = this.treeMap.get(color);
+
+        if(tree == null) {
+            tree = new Tree(color);
+            this.treeMap.set(color, tree);
+        }
+        return tree;
+    }
+}
+
+const red1 = TreeFactory.getTree("red");
+const red2 = TreeFactory.getTree("red");
+console.log(TreeFactory.treeMap); // 같은 색상을 같은 tree 객체를 불러옴
+
+const blue1 = TreeFactory.getTree("blue");
+console.log(TreeFactory.treeMap); // 다른 색상은 새로운 tree 객체 생성
