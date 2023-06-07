@@ -26,7 +26,6 @@ public class Order {
 
 ---
 
-
 - **Aggregation** (has-a + whole-part)  
     - 항상 참조 + 전체 부분과 관계  
     - 독립적 (생명주기 다름)  
@@ -44,7 +43,6 @@ public class Computer {
 ```
 
 ---
-
 
 - **Composition** (has-a + whole-part + ownership)  
     - 항상 참조 + 전체 부분과 관계  
